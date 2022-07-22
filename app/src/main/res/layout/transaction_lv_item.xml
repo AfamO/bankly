@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:padding="2dp"
+    app:cardElevation="3dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/transactionTypeName"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:padding="3dp"
+            android:text="Withdrawal"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="40dp"
+            android:layout_toEndOf="@id/transactionTypeName"
+            android:padding="3dp"
+            android:text="#2500"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/transactionDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="70dp"
+
+            android:padding="3dp"
+            android:text="2022-07-14 12:56:27"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+
+
+
+        <TextView
+            android:id="@+id/statusName"
+            android:layout_width="113dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="70dp"
+            android:layout_toEndOf="@id/transactionDate"
+            android:text="@string/status_sucesss_label"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="13sp"
+            android:textStyle="bold|italic" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Bankly</string>
+    <string name="status_sucesss_label">Successfull</string>
+    <string name="status_all_label">All</string>
+</resources>
